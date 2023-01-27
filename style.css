@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  background-color: black;
+}
+
+.fumaca /* div */ {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fumaca {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fumaca 2s infinite;
+}
+
+@keyframes fumaca {
+  0% {
+    opacity: 100%;
+  }
+
+  25% {
+    opacity: 80%;
+  }
+
+  50% {
+    opacity: 70%;
+  }
+
+  80% {
+    opacity: 80%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.cidade /* div */ {
+  bottom: -50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cidade {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  bottom: -80px;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.portal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imagem-portal {
+  position: absolute;
+  top: 10px;
+  width: 1100px;
+  height: 1100px;
+  border-radius: 100%;
+  animation: portal 0.3s linear infinite;
+}
+
+@keyframes portal {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+#osHomensAranha {
+  bottom: 0px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: animacaoHomemAranha 3s linear;
+}
+
+@keyframes animacaoHomemAranha {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 65%;
+    height: 65%;
+  }
+}
+
+.osHomensAranha /* div */ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
