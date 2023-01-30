@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow-y: hidden;
+  overflow-x: hidden;
   background-color: black;
 }
 
@@ -118,4 +119,111 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.duende {
+  top: 50px;
+  right: 0px;
+  position: absolute;
+}
+
+#duende {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  animation: animacaoFlutuante 3s infinite, animacaoDuende 3s linear;
+}
+@keyframes animacaoDuende {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes animacaoFlutuante {
+  0% {
+    top: 15px;
+  }
+  25% {
+    top: 5px;
+  }
+  50% {
+    top: 15px;
+  }
+  75% {
+    top: 5px;
+  }
+  100% {
+    top: 15px;
+  }
+}
+
+#octapus {
+  width: 500px;
+  height: 500px;
+  bottom: 5px;
+  left: -30px;
+  position: absolute;
+  animation: octapus 5s linear;
+  /* animation-delay: 3s; */
+}
+
+@keyframes octapus {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.div-estreia {
+  position: absolute;
+  font-size: 30px;
+  right: 0px;
+  bottom: 0;
+  color: white;
+  font-family: "Unbounded", cursive;
+  border-right: 5px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: digitando 2s steps(13) infinite alternate,
+    barrinha 800ms steps(13) infinite normal;
+}
+.estreia {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  width: 25vw;
+  height: 10vw;
+}
+@keyframes digitando {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes barrinha {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+.teia {
+  position: absolute;
+  top: 0px;
+  left: -70px;
+}
+#teia {
+  width: 500px;
 }
